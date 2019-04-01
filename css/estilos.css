@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html {
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+        
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.main-turn__ticket{
+    height: 90vh;
+}
+#contenedor__carga{
+
+  background-color: rgba(250, 240, 245 , 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+}
+
+#carga{
+
+  border: 8px solid #ccc;
+  border-top-color: #f4266a;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+
+  animation: girar 1.5s linear infinite;
+
+}
+
+@keyframes girar{
+
+   from { transform: rotate(0deg); }
+   to {transform: rotate(360deg);}
+
+
+}
+
+.img-load-sat{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+
+
+}
+
+
+.main__header{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #FA4152;
+    box-shadow: 0px 1px 2px #888888;
+}
+
+.main__header__title, .main__header__img{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+
+.main__header__img{
+
+   justify-content: space-around;
+
+}
+
+.main__info__ticket{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+
+}
+
+.main__form{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    
+
+}
+
+
+.btn-estilos{
+
+    margin-top: 30px;
+    height: 40px;
+    box-shadow: 0px 3px 9px #888888;
+    background: #FA4152;
+    color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header--img{
+
+    margin-top: 10px;
+}
+
+
+.main-dispenser-turns{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    width: 300px; 
+    height: 70px; 
+    background-color:#747474; 
+    border-radius: 5px; 
+
+
+}
+
+.main-dispenser-turn{
+
+    margin-top:5px;
+    margin-right:5px;
+    animation: beep 1.3s linear;
+    animation-fill-mode: forwards;
+
+}
+
+
+.content-paper-turn--title{
+
+    position: absolute;
+    animation: moveTitle 1.3s linear;
+    animation-fill-mode: forwards;
+    color: #FA4152 ;
+
+}
+
+.line-ticket{
+    height: 5px; 
+    width: 100%; 
+    border-top-style: dashed; 
+    border-top-color: white;
+}
+
+.dispenser-intern{
+    width: 230px; 
+    height: 7px; 
+    background-color:rgb(0, 0, 0);
+    padding-left: 5px; 
+    padding-right: 3px;
+    padding-top: 3px; 
+    position: relative;
+}
+
+.content-turn{
+
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #FA4152; 
+    height: auto;
+    box-shadow: 0px 4px 1px #888888;
+    animation: moveService 1.3s linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    /*border-top-style: dashed;*/
+
+}
+
+
+.badge {
+  
+    background-color: #fa4152;
+   
+}
+
+.footer{
+    /* margin-top: 190px;  */
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    width: 100%; 
+    justify-content: center;
+}
+
+
+/* @keyframes moveService{
+
+    
+     0%  { height: 150px; padding-top:6px;}
+    25%  { height: 160px; padding-top:16px;}
+    50%  { height: 170px; padding-top:26px; }
+    75%  { height: 180px; padding-top:36px; }
+    100%  { height: 190px; padding-top:46px;}
+    
+
+} */
+
+@keyframes moveService{
+    
+        
+         0%  {  padding-top:6px;}
+        25%  {  padding-top:16px;}
+        50%  {  padding-top:26px; }
+        75%  {  padding-top:36px; }
+        100%  {  padding-top:46px;}
+        
+    
+    }
+
+
+
+@keyframes beep{
+
+     0%  {color: #9DFF0E;}
+    25%  {color: red; }
+    50%  {color: #9DFF0E;}
+    75% {color: red;}
+    100% {color: white;}
+
+
+}
+
+.main__info__ticket{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center; */
+
+}
+
+.header__ticket{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #FA4152;
+    height: 190px;
+
+    
+
+}
+
+
+.main__header__ticket{
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FA4152;
+    /*height: 140px;*/
+
+}
+
+.main__header__loginUser{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #FA4152;
+    width: 100%;
+
+}
+
+.main__header__ticket--content{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #FA4152;
+
+}
+
+@media screen and (max-width: 320px){
+
+    .main__info{
+
+        width: 100vw;
+        height: 100vh;
+        /*padding-top: 10px;*/
+        padding-bottom: 5px;
+        padding-left: 0;
+        padding-right: 0;
+
+   }
+
+    .main__header{
+
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 9px #888888;
+    
+
+}
+
+.main__header__title, .main__header__img{
+
+ 
+    justify-content: flex-start;
+    padding-top: 10px;
+
+
+}
+
+
+
+   .main__header__img{
+
+         
+        top:90px;
+        
+
+}
+
+.header--img{
+
+    margin-top: 7px;
+}
+
+
+
+}
+
+.color-white{
+    color: white;
+}
+

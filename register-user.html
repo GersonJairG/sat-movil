@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="img/logo.png" rel="shortcut icon">
+	<title>Register user</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles-register-user.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+
+<body>
+	<div class="container-index">
+		<!--<div class="container-row-left">
+					<a href="index.html">
+						<img class="row-left" src="img/row-left.png" alt="Atras">
+					</a>
+			</div>-->
+		<div class="header">
+			<a href="index.html">
+				<i class="fa fa-arrow-left header-arrow" style="color: white; margin-bottom:130px; font-size: 20px;" aria-hidden="true"></i>
+			</a>
+			<div class="circle">
+				<!-- <div class="content-logo">-->
+					<img class="logo img-responsive" src="img/logo.png" alt="Logo" />
+					<label class="logo-title">SAT</label>
+				<!--</div>-->
+			</div>
+
+			<i class="fa fa-arrow-left header-arrow " style="color: white; margin-bottom:130px; font-size: 20px; visibility: hidden;" aria-hidden="true"></i>
+		</div>
+		<div class="formulario">
+			<form class="form-signin">
+				<br>
+				<div>
+					<p class="input_title">NOMBRES</p>
+					<input type="text" id="names-user" class="login_box" placeholder="" value="" required autofocus>
+				</div>
+				<div>
+					<p class="input_title">APELLIDOS</p>
+					<input type="text" id="last_names-user" class="login_box" placeholder="" value="" required autofocus>
+				</div>
+				<div>
+					<p class="input_title">DOCUMENTO</p>
+					<input type="text" id="document-user" class="login_box" placeholder="" value="" required autofocus maxlength="10">
+				</div>
+				<div>
+					<span id="reauth-email" class="reauth-email"></span>
+					<p class="input_title">EMAIL</p>
+					<input type="text" id="email-user" class="login_box" placeholder="example@gmail.com" value="" required autofocus>
+				</div>
+				<div>
+					<p class="input_title">CELULAR</p>
+					<input type="text" id="phone-user" class="login_box" placeholder="" value="" required autofocus maxlength="10">
+				</div>
+				<div>
+					<p class="input_title">CONTRASEÑA</p>
+					<input type="password" id="password-user" class="login_box" placeholder="" value="" required autofocus>
+				</div>
+				<div>
+					<p class="input_title">CONFIRMAR CONTRASEÑA</p>
+					<input type="password" id="repassword-user" class="login_box" placeholder="" value="" required autofocus>
+				</div>
+
+
+				<!--<a id="login" class="btn btn-lg btn-danger btn-login">Acceder <i class="fa fa-check-circle" aria-hidden="true"></i></a>-->
+				<a id="register-user" class="btn btn-lg btn-danger btn-login" type="">Registrar
+					<i class="fa fa-check-circle" aria-hidden="true"></i>
+				</a>
+
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/lib/storejs/store.js"></script>
+	<script src="js/constants.js"></script>
+	<!-- <script src="js/modules/profile/profile.controller.js"></script>     -->
+	<script src="js/modules/authentication/login.controller.js"></script>
+	<script src="js/modules/authentication/login.events.js"></script>
+	<script src="js/modules/users/users.controller.js"></script>
+	<script src="js/modules/users/users.events.js"></script>
+</body>
+
+</html>

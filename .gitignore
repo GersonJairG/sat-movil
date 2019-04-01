@@ -1,0 +1,5 @@
+access_log
+error_log
+bower_components
+package.json
+node_modules/

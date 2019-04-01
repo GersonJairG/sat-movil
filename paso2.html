@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<link href="img/logo.png" rel="shortcut icon">
+	<title>Segundo paso</title>
+	<!--<script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>-->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/input.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<script type="text/javascript" src="js/loadpage.js"></script>
+
+</head>
+
+<body>
+
+	<div id="contenedor__carga">
+
+		<div id="carga"></div>
+		<img src="img/logo.png" width="50" height="50" class="img-load-sat">
+
+	</div>
+
+	<div class="main" id="Titulo">
+
+		<div class="main__info">
+
+			<div class="main__header">
+
+				<div class="main__header__loginUser">
+
+					<!--<small class="header__loginUser--user">
+						<i id="bienvenido1" class="fa fa-user-circle-o header__loginUser--icon" aria-hidden="true"></i>
+					</small>-->
+					<i class="fa fa-times" aria-hidden="true" style="color: white; margin-right: 10px; visibility: hidden;"></i>
+
+				</div>
+
+				<div class="main__header__service">
+					<a href="index.html">
+							<i class="fa fa-arrow-left" aria-hidden="true" style="color: white; margin-bottom: 130px;"></i>
+					</a>
+					
+
+					<div class="main__header__title">
+
+						<h3 style="font-weight:700;">Tipo de Servicio</h3>
+						<h5 style="font-weight:500;">Busca y selecciona el motivo del turno</h5>
+						<div class="main__header__img">
+							<!-- <i class="fa fa-ticket  fa-3x" aria-hidden="true" style="color: white; margin-top: 5px;"></i> -->
+							<img src="img/turn-right.png" alt="" class="header--img">
+						</div>
+
+					</div>
+
+
+
+					<i class="fa fa-arrow-left" aria-hidden="true" style="color: white; visibility: hidden;"></i>
+
+
+
+
+				</div>
+
+
+
+
+			</div>
+
+			<div class="form-group container-service">
+				<div class="">
+					<input id="service-types" class="form-control service-search" placeholder="¿Que necesitas?" type="text" autocomplete="off">
+					</input>
+				</div>
+			</div>
+			<!-- 
+				<div class="form-group container-text-list">
+					<label> o puedes seleccionar una de las mas utilizadas..</label>
+				</div> -->
+
+
+
+			<ul id="service-container" class="service__container">
+			</ul>
+
+
+		</div>
+
+
+		<div class="main__button" style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+
+			<button id="reserve-turn" type="submit" class="btn btn-danger btn-estilos">Reservar Turno</button>
+
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+ crossorigin="anonymous"></script>
+<!--Firebase-->
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script type="text/javascript" src="js/firebase-configuration.js"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/lib/storejs/store.js"></script>
+<script src="js/lib/moment/moment.min.js"></script>
+
+
+<script type="text/javascript" src="js/modules/profile/profile.controller.js"></script>
+<script type="text/javascript" src="js/modules/service-types/service-types.controller.js"></script>
+<script type="text/javascript" src="js/modules/turns/turns.controller.js"></script>
+<script type="text/javascript" src="js/modules/service-types/service-types.events.js"></script>
+
+</html>

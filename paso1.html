@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8">
+	<link href="img/logo.png" rel="shortcut icon">
+	<title>Primer paso</title>
+	<script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/input.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<script type="text/javascript" src="js/loadpage.js"></script>
+
+</head>
+<body>	
+
+	<div id="contenedor__carga">
+		
+		<div id="carga"></div>
+		<img src="img/logo.png" width="50" height="50" class="img-load-sat">
+
+	</div>
+
+	<div class="main" id="Titulo">
+
+		<div class="main__info">
+						
+			<div class="main__header">
+
+					<div class="main__header__title">
+						<!-- <h3 class="main__header--title">SAT</h3> -->
+						<h3 class="main__header--title">Solicitud de Turno</h3>
+						<h4>Paso 1 de 2</h4>
+					
+
+					</div>
+
+					<div class="main__header__img">
+
+				 		<!-- <i class="fa fa-address-card-o fa-3x" aria-hidden="true" style="color: white;  "></i> -->
+				 		<img src="img/consultanormalsat.png" alt="solicitudsat" class="header--img">
+				 	
+	
+					</div>
+
+			
+			</div>
+
+				
+
+			<div class="main__form">
+
+					
+			       <div class="group">
+				    <input type="text" id="codigo" required="required" v-model="documento" maxlength="10" />
+				    <label for="codigo">Cédula</label>
+				    <div class="bar"></div>
+				  </div>
+
+				  <div class="group">
+				    <input type="text" id="name" required="required"/>
+				    <label for="name">Nombres y Apellidos</label>
+				    <div class="bar"></div>
+				  </div>
+			
+
+				  <div class="group">
+				    <input type="text" id="email" required="required" v-model="correo" @keyup="validardocumento" />
+				    <label for="email">Email</label>
+				    <div class="bar" :class="emailError" ></div>
+				  </div>
+
+				
+				   <button type="submit" style="font-weight:700;" class="btn btn-danger btn-estilos">Siguiente Paso</button>
+				
+				
+				  
+			
+
+			
+
+			</div>
+			
+
+
+
+		</div>
+
+		
+		
+
+
+	</div>
+
+
+	<script type="text/javascript" src="js/script1vue.js"></script>
+	<script type="text/javascript" src="js/script1jquery.js"></script>
+
+	<script src="js/modules/turn-email/turn-email.events.js"></script>
+
+</body>
+
+
+
+</html>

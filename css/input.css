@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+		* {
+			  box-sizing: border-box;
+		  }
+
+
+
+
+
+.group {
+  width: 90%;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  position: absolute;
+  top: 36.66667px;
+  color: rgba(0, 0, 0, 0.3);
+  
+ /*tamanio de fuente del input*/
+  font: 300 15px Montserrat;
+ /*--------------------------*/
+
+  cursor: text;
+  transition: .25s ease;
+ 
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding-top: 39.66667px;
+  border: none;
+  border-radius: 0;
+  color: black;
+  font-size: 18px;
+  transition: .3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+input:valid ~ label {
+  top: 0;
+  font: 200 15px Montserrat;
+  color: rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
+}
+input:focus ~ label {
+  top: 0;
+  font: 200 15px Montserrat;
+  color: black;
+  font-weight: bold;
+}
+input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-text-fill-color: black !important;
+}
+
+.bar {
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  width: 100%;
+  height: 1.66667px;
+  transition: .3s ease;
+  position: relative;
+
+}
+.bar:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: lightgreen;
+  transform: translateX(-100%);
+}
+
+.email-error:before{
+
+  background:#FA4152;
+
+}
+
+::selection {
+
+  background: #FA4152;
+}
+

@@ -1,0 +1,37 @@
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .panel-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.container .panel-body .checkeable, .container .panel-body .btn-editar, .container .panel-body .btn-eliminar {
+    width: 4%;
+}
+
+.container .panel-body .task {
+    width: 88%;
+}
+
+.container .tarea-completada {
+    color: gray;
+}
+
+.container .tarea-completada h4 {
+    text-decoration: line-through;
+}
+
+.container .tarea-completada a span {
+    color: gray;
+}
+
+
+/*# sourceMappingURL=estilosCrud.css.map */

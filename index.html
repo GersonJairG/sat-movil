@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="img/logo.png" rel="shortcut icon">
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles-index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="circle">
+				<div class="content-logo">
+					<img class="logo img-responsive" src="img/logo.png" alt="Logo" />
+					<label class="logo-title">SAT</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="formulario">
+			<form class="form-signin">
+				<div>
+					<span id="reauth-email" class="reauth-email"></span>
+					<p class="input_title">CORREO ELECTRONICO</p>
+					<input type="text" id="inputEmail" class="login_box" placeholder="example@gmail.com" autofocus>
+				</div>
+				<br>
+				<div>
+					<p class="input_title">CONTRASEÑA</p>
+					<input type="password" id="inputPassword" class="login_box" placeholder="">
+				</div>
+				<!--<a id="login" class="btn btn-lg btn-danger btn-login">Acceder <i class="fa fa-check-circle" aria-hidden="true"></i></a>-->
+				<a id="login-movil" class="btn btn-lg btn-danger btn-login" type="">Acceder  <i class="fa fa-check-circle" aria-hidden="true"></i></a>
+				
+			</form>
+		</div>
+		<div class="footer">
+			<div class="row">
+				<label class="footer-title">No tienes una cuenta?</label>
+				<label>
+					<a class="links" href="register-user.html">										
+							Registrate!
+					</a>
+				</label>
+			</div>
+			<!--<div class="row">
+				<div class="col-xs-6">
+					<a class="links" href="paso1.html">
+						<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+						<div class="col-xs-12 footer-descriptions">
+							Acceder por el correo
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6">
+					<a class="links" href="register-user.html">
+						<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
+						<div class="col-xs-12 footer-descriptions">
+							Registrarte
+						</div>
+					</a>
+				</div>
+			</div>-->
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/lib/storejs/store.js"></script>
+	<script src="js/constants.js"></script>
+    <!-- <script src="js/modules/profile/profile.controller.js"></script>     -->
+	<script src="js/modules/authentication/login.controller.js" ></script>
+	<script src="js/modules/authentication/login.events.js" ></script>
+</body>
+
+</html>

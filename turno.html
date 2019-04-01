@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Turno Reservado</title>
+	<script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!--<script type="text/javascript" src="js/loadpage.js"></script>-->
+
+</head>
+
+<body>
+	<div class="main-turn__ticket">
+		<div class="main" id="Titulo">
+			<div class="main__info__ticket">
+				<div class="header__ticket">
+
+
+					<div class="main__header__loginUser">
+						<small style="color: white; font-size :12px; margin-left: 10px;">
+							<i id="bienvenido2" class="fa fa-user-circle-o" aria-hidden="true" style="display: none;font-size: 14px; color: white;"></i>
+						</small>
+
+						<i id="cancel-turn" class="fa fa-times" aria-hidden="true" style="color: white; margin-right: 10px;"></i>
+
+
+
+
+
+						<!--<div class="main__header__title">
+							<h3 class="main__header--title">Turno Reservado</h3>-->
+					</div>
+
+					<div class="main__header__ticket">
+						<h3 class="main__header--title" style="color: white; margin:0;">Turno Reservado</h3>
+						<img src="img/checked.png" alt="" class="header--img">
+					</div>
+
+
+
+
+
+
+				</div>
+
+				<div class="main__form">
+					<div class="main-dispenser-turns">
+						<div class="dispenser-intern">
+							<div class="content-turn move-ticket">
+								<div class="line-ticket"></div>
+								<img src="img/sat-icon.jpg">
+								<b id="service_type-ticket" class="color-white"></b>
+								<i id="name_user-ticket" class="color-white"></i>
+								<i id="document_user-ticket" class="color-white"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='footer'  class="footer">
+		 <i class="fa fa-user-plus" aria-hidden="true" style="color: #FA4152"></i>
+		<p style="font-size: 15px;">Usuarios restantes en la cola
+			<span class="badge">5</span>
+		</p>
+	</div>
+
+	<!--Firebase-->
+	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script type="text/javascript" src="js/firebase-configuration.js"></script>
+
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/lib/storejs/store.js"></script>
+	<script src="js/lib/moment/moment.min.js"></script>
+
+	<script type="text/javascript" src="js/modules/profile/profile.controller.js"></script>
+	<script type="text/javascript" src="js/script3jquery.js"></script>
+	<script type="text/javascript" src="js/modules/turns/turns.controller.js"></script>
+	<script type="text/javascript" src="js/modules/turns/turns.events.js"></script>
+
+</body>
+
+
+
+</html>
