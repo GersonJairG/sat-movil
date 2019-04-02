@@ -1,5 +1,5 @@
-function createUserToken(document, name, lastname, email, phone, password, id_user_state) {
-    userModule.createUserToken(document, name, lastname, email, phone, password, id_user_state)
+function createUserToken(document, name, lastname, email, phone, password, idUserState) {
+    userModule.createUserToken(document, name, lastname, email, phone, password, idUserState)
         .then(function (response) {
             console.log(response);
         })
@@ -28,7 +28,7 @@ $('#register-user').on('click', function () {
     var phone = $('#phone-user').val();
     var password = $('#password-user').val();
     var repassword = $('#repassword-user').val();
-    var id_user_state = 4;//Por confirmar
+    var idUserState = 4;//Por confirmar
 
     if (!(name == '' || lastname == '' || document == '' || email == '' || phone == '' || password == '' || repassword == '')) {
         if (!helper.checkOnlyNumbers(document)) {
@@ -61,7 +61,7 @@ $('#register-user').on('click', function () {
                         if (goodDocument) {
                             if (password == repassword) {
                                 $('#register-user').attr('data-dismiss', 'modal');
-                                createUserToken(document, name, lastname, email, phone, password, id_user_state);
+                                createUserToken(document, name, lastname, email, phone, password, idUserState);
                                 swal({
                                     title: 'Datos correctos',
                                     text: 'Por favor confirma tu cuenta por medio del correo',

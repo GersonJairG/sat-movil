@@ -12,7 +12,7 @@ function createTurnFirebase(turnType, idTurnState, idUser, idServiceType, idSeme
 $("#service-types").autocomplete({
     source: function (request, response) {
         $.ajax({
-            url: constants.URL_API + '/service-types',//Trae todos los tipos de servicios y su dependencia
+            url: constants.URL_API + '/service-types',
             dataType: "json",
             data: {
                 searchText: request.term

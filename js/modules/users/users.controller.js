@@ -7,7 +7,7 @@ var userModule = {
     },
 
 
-    createUserToken: function (document, name, lastname, email, phone, password, id_user_state) {
+    createUserToken: function (document, name, lastname, email, phone, password, idUserState) {
         return $.ajax({
             method: 'POST',
             url: constants.URL_API + '/users/token',
@@ -18,7 +18,7 @@ var userModule = {
                 email: email,
                 phone: phone,
                 password: password,
-                id_user_state: id_user_state
+                idUserState: idUserState
             }
         })
     }
